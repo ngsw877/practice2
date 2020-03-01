@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .sample {
+	width:280px;
+    height:auto;
+    background:lime;
+    }
+.sample img {
+	width:100%;
+    height:auto
+    }
+/*   
+  .clip-inset1 {
+    clip-path:inset(20px 60px round 20px);
+  } */
+/* .clip-inset1 { /*img要素のクラス名です*/
+	/* -webkit-clip-path:inset(20px);
+	clip-path:inset(20px) 
+    } */
+
+  .clip-inset1{
+    clip-path: polygon(60% 0%, 10% 80%, 90% 100%, 100% 20%);
+  }
+  </style>
+</head>
+<body>
+  <div class="sample">
+    <img class="clip-inset1" src="images/machines-91849_1280.jpg">
+  </div>
+</body>
+</html>
