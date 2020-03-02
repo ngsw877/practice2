@@ -11,7 +11,7 @@
   <script src="js/jquery-3.4.1.min.js"></script>
   <!-- スライドショー -->
   <script src="lib/js/jquery.bxslider.js"></script>
-  
+  <script src="js/bxslider.js"></script>
   <!-- ハンバーガーメニュー -->
   <script src="js/hamburger.js"></script>
 </head>
@@ -37,10 +37,12 @@
   </header>
   <main>
     <article class="mainvisual">
+     <div class="mainphote">
       <img src="images/weights-652486_1280.jpg" alt="メイン1">
       <img src="images/girl-3253532_1280.jpg" alt="メイン2">
       <img src="images/people-2604149_1280.jpg" alt="メイン3">
-      <h2>鍛える。</h2>
+     </div>
+     <h2>鍛える。</h2>
     </article>
     <article class="topics">
       <section class="content-wrapper">
@@ -94,20 +96,27 @@
       </section>
     </article>
     <article class="contact">
-
+      <ul>
+        <li><a href="#">お問い合わせ</a></li>
+      </ul>
     </article>
   </main>
   <footer class="footer">
     <section class="content-wrapper">
-      
+      <div class="high">
+        <h1>○○FITNESS</h1>
+        <ul>
+          <li><a href="#">施設情報</a></li>
+          <li><a href="#">採用情報</a></li>
+          <li><a href="#">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <div class="low">
+        〒000-0000<span>東京都xxxxx</span><br>
+        TEL:012-3456-7890
+      </div>
+      <p>&copy;○○FITNESS Co.,Ltd.</p>
     </section>
   </footer>
-<script>
-  $(function() {
-    $('.mainvisual').bxSlider({
-      auto: true
-    });
-  })
-</script>
 </body>
 </html>

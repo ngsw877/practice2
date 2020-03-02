@@ -231,6 +231,20 @@ header nav li a:hover {
 
 .topics {
   padding: 120px;
+  position: relative;
+}
+
+.topics::after {
+  content: "";
+  background-color: #f3f3f3;
+  height: 150%;
+  width: 40%;
+  position: absolute;
+  top: -10%;
+  left: 30%;
+  transform-origin: left top;
+  transform: skewX(30deg);
+  z-index: -1;
 }
 
 .topics .content-wrapper {
@@ -467,7 +481,7 @@ header nav li a:hover {
   top: 0;
   left: 0;
   width: 100%;
-  padding-top: 43%; /*66%にするとぴったりになる*/
+  padding-top: 66%; /*66%にするとぴったりになる*/
   background: rgba(50, 50, 50, 0.7);
   z-index: 1;
   transition: all .6s ease;
@@ -513,3 +527,132 @@ header nav li a:hover {
 }
 
 /* ======================== recruit ====================== */
+
+
+/* ========================  contact  ====================== */
+
+.contact {
+  width: 100%;
+  height: 500px;
+  background: url(../images/iphone-410324_1280.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+}
+
+.contact ul {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  z-index: 1;
+  width: 100%;
+}
+
+.contact li {
+  width: 300px;
+  margin: 0 50px;
+}
+
+.contact li a {
+  border: 1px solid #fff;
+  font-size: 1.25rem;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+}
+
+.contact li a:hover {
+  background: #fff;
+  color: #333;
+}
+
+/* ========================  contact  ====================== */
+
+
+/* ========================  footer  ====================== */
+
+.footer section {
+  padding-top: 120px;
+}
+
+.footer .high {
+  border-bottom: 1px solid #333;
+  display: -msflexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.footer .high ul {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.footer .high li a {
+  color:#333;
+  padding: 0 25px;
+}
+
+.footer .high li a:hover {
+  opacity: 0.6;
+}
+
+.footer .low {
+  padding: 25px 0 80px 0;
+  color: #333;
+}
+
+.footer .low span {
+  padding-left: 1em;
+}
+
+.footer section p {
+  color: #333;
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer .high {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer section {
+    padding-top: 50px;
+  }
+  
+  .footer .high li {
+    width: calc(100%/3);
+    margin: 0 0 10px;
+  }
+  
+  .footer .high li a {
+    display: block;
+    text-align: center;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .footer .high h1,.low {
+    text-align: center;
+  }
+}
+
+/* ========================  footer  ====================== */
